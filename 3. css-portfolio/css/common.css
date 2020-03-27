@@ -1,0 +1,19 @@
+/*nav bar css*/
+.nav-bar{
+  padding: 10px;
+  text-align: center;
+  padding-left: 20px;
+  position: fixed;
+  background: #2F3061;
+  width: 100%;
+}
+
+.nav-item{
+  padding-left: 20px;
+  color: #FFE66D;
+  text-decoration: none;
+}
+
+.nav-active{
+  color: #6dffb5;
+}

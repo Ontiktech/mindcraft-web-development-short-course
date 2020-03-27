@@ -1,0 +1,54 @@
+body {
+  color: #343434;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.featured-courses {
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+
+.mt-10{
+	margin-top: 10px !important;
+}
+
+.feature-divider > div:first-of-type {
+  border-bottom: 1px dashed #343434;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.divider > div {
+  border-bottom: 1px dashed #343434;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.divider > div:last-of-type {
+  border-bottom: none;
+}
+
+.case-study {
+  background: #A1C6D7;
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+
+.instructors {
+  background-image: url(../images/joanna-kosinska-unsplash.jpg);
+  background-size: cover;
+  background-position: top right;
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+
+footer {
+    background: #343434;
+    color: #F7FFF7;
+    padding: 60px 0px
+}
+
+footer a{
+	color: #FFE66D !important;	
+}
