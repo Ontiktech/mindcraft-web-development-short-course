@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Basic CSS & Concepts-02</title>
+</head>
+
+<body>
+
+	<!-- CSS display -->
+		<style>
+			.block_element{
+				background-color: green;
+				width: 300px;
+				height: 20px;
+				/*display: inline;*/
+
+			}
+
+			.inline_element{
+				background-color: red;
+				width: 300px;
+				height: 30px;
+				/*display: block;*/
+				/*display: inline-block;*/
+			}
+		</style>
+
+		<div class="block_element">First Block Element</div>
+		<div class="block_element">Second Block Element</div>
+
+		<!-- <p style="visibility: hidden;">Testing Visibility</p> -->
+		<!-- <p style="display: none;">Testing Visibility</p> -->
+
+		<span class="inline_element">First Inline Element</span>
+		<span class="inline_element">Second Inline Element</span>
+	<!-- CSS display Ends-->
+
+	<!-- CSS position -->
+		<style>
+
+			/* Static positioned elements are not affected by the top, bottom, left, and right properties. An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page:*/
+			div.static {
+			  position: static;
+			  border: 3px solid #73AD21;
+			}
+
+			/*An element with position: relative; is positioned RELATIVE TO ITS NORMAL POSITION. 
+			Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.*/
+			div.relative {
+			  position: relative;
+			  left: 30px;
+			  border: 3px solid #73AD21;
+			}
+
+			/*An element with position: fixed; is positioned RELATIVE TO VIEWPORT,
+			which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element. A fixed element does not leave a gap in the page where it would normally have been located.*/
+			div.fixed {
+			  position: fixed;
+			  bottom: 0;
+			  right: 0;
+			  border: 3px solid #73AD21;
+			}
+
+			/*An element with position: absolute; is positioned RELATIVE TO THE NEAREST POSITIONED ANCESTOR
+			(instead of positioned relative to the viewport, like fixed).*/
+			div.relative2 {
+			  position: relative;
+			  width: 400px;
+			  height: 200px;
+			  border: 3px solid #73AD21;
+			} 
+
+			div.absolute {
+			  position: absolute;
+			  top: 80px;
+			  right: 0;
+			  width: 200px;
+			  height: 100px;
+			  border: 3px solid #73AD21;
+			}
+
+			/*However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling. 
+			Note: A "positioned" element is one whose position is anything except static.*/
+			/*div.absolute2 {
+			  position: absolute;
+			  top: 80px;
+			  right: 0;
+			  width: 200px;
+			  height: 100px;
+			  border: 3px solid red;
+			}*/
+
+
+		</style>
+
+		<div class="static">
+		  This div element has position: static;
+		</div>
+		<br/>
+		<div class="relative">
+		  This div element has position: relative;
+		</div>
+		<div class="fixed">
+		  This div element has position: fixed;
+		</div>
+
+		<br/>
+		<div class="relative2">This div element has position: relative;
+		  <div class="absolute">This div element has position: absolute;</div>
+		</div>
+
+		<!-- <div class="absolute2">This div element has position: absolute;</div> -->
+	<!-- CSS position Ends-->
+
+	<!-- CSS overflow -->
+		<style>
+			div.overflow-visible {
+			  background-color: #eee;
+			  width: 200px;
+			  height: 50px;
+			  border: 1px dotted black;
+			  overflow: visible;
+			}
+
+			div.overflow-hidden {
+			  background-color: #eee;
+			  width: 200px;
+			  height: 50px;
+			  border: 1px dotted black;
+			  overflow: hidden;
+			}
+
+			div.overflow-scroll {
+			  background-color: #eee;
+			  width: 200px;
+			  height: 50px;
+			  border: 1px dotted black;
+			  overflow: scroll;
+			}
+
+			div.overflow-auto {
+			  background-color: #eee;
+			  width: 200px;
+			  height: 70px;
+			  border: 1px dotted black;
+			  overflow: auto;
+			}
+
+			div.overflow-x-y {
+			  background-color: #eee;
+			  width: 200px;
+			  height: 70px;
+			  border: 1px dotted black;
+			  overflow-x: hidden;
+			  overflow-y: hidden;
+			}
+			
+		</style>
+
+		<br>
+		<div class="overflow-visible">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+
+		<br><br><br><br><br><br>
+		<div class="overflow-hidden">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+
+		<br>
+		<div class="overflow-scroll">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+
+		<br>
+		<div class="overflow-auto">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+
+		<br>
+		<div class="overflow-x-y">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+	<!-- CSS overflow Ends -->
+
+	<!-- CSS text -->
+		<style>
+			.text-style {
+			  background-color: lightgrey;
+			  color: blue;
+			  /*text-align: justify;*/ /*check with left, right, center value*/
+			  text-decoration: underline;
+			  text-transform: capitalize;
+			  /*text-indent: 50px;*/ /* used to specify the indentation of the first line of a text */
+			  /*letter-spacing: 3px;*/ /* used to specify the space between the characters in a text */
+			  /*line-height: 1.8;*/ /* used to specify the space between lines */
+			  /*word-spacing: 10px;*/ /* used to specify the space between the words in a text */
+			}
+		</style>
+
+		<p class="text-style">In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'</p>
+
+
+		<!-- css white-space -->
+			<style>
+				p.a {
+				  white-space: nowrap;
+				}
+
+				p.b {
+				  white-space: normal;
+				}
+
+				p.c {
+				  white-space: pre;
+				}
+			</style>
+
+			<h1>The white-space Property</h1>
+
+			<h2>white-space: nowrap:</h2>
+			<p class="a">
+			This is some text. This is some text. This is some text.
+			This is some text. This is some text. This is some text.
+			This is some text. This is some text. This is some text.
+			This is some text. This is some text. This is some text.
+			</p>
+
+			<h2>white-space: normal:</h2>
+			<p class="b">
+			This is some text. This is some text. This is some text.
+			This is some text. This is some text. This is some text.
+			This is some text. This is some text. This is some text.
+			This is some text. This is some text. This is some text.
+			</p>
+
+			<h2>white-space: pre:</h2>
+			<p class="c">
+			This is some text. This is some text. This is some text.
+			This is some text. This is some text. This is some text.
+			This is some text. This is some text. This is some text.
+			This is some text. This is some text. This is some text.
+			</p>
+		<!-- css white-space ends -->
+
+	<!-- CSS text ends -->
+
+	<!-- CSS font -->
+		<style>
+			/*.serif {
+			  font-family: "Times New Roman", Times, serif;
+			}
+
+			.sansserif {
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+
+			.monospace {
+			  font-family: "Lucida Console", Courier, monospace;
+			}*/
+
+			/*p.normal {
+			  font-weight: normal;
+			}
+
+			p.thick {
+			  font-weight: bold;
+			}
+
+			p.thicker {
+			  font-weight: 900;
+			}*/
+
+			/*html{
+				font-size: 20px;
+			}
+			.parent-size{
+				font-size: 18px;
+			}
+			p.px-size{
+				font-size: 16px;
+			}
+			p.em-size{
+				font-size: 2em;
+			}
+			p.rem-size{
+				font-size: 2rem;
+			}*/
+
+		</style>
+
+		<h1>CSS font-family</h1>
+		<p class="serif">This is a paragraph, shown in the Times New Roman font.</p>
+		<p class="sansserif">This is a paragraph, shown in the Arial font.</p>
+		<p class="monospace">This is a paragraph, shown in the Lucida Console font.</p>
+
+		<p class="normal">This is a paragraph.</p>
+		<p class="thick">This is a paragraph.</p>
+		<p class="thicker">This is a paragraph.</p>
+
+		<div class="parent-size">
+			<p class="px-size">The size of the paragraph is: 16 px</p>
+			<p class="em-size">The size of the paragraph is: 2em</p>
+			<p class="rem-size">The size of the paragraph is: 2rem</p>
+		</div>
+	<!-- CSS font ends -->
+
+	<!-- css list and table-->
+		<style>
+			.ordered-list{
+				list-style-type: lower-alpha;
+				/*list-style-position: inside;*/
+			}
+		</style>
+
+		<p>Example of ordered lists:</p>
+		<ol class="ordered-list">
+		  <li>Coffee - A brewed drink prepared from roasted coffee beans, which are the seeds of berries from the Coffea plant</li>
+		  <li>Tea - An aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis, an evergreen shrub (bush) native to Asia</li>
+		  <li>Coca Cola - A carbonated soft drink produced by The Coca-Cola Company. The drink's name refers to two of its original ingredients, which were kola nuts (a source of caffeine) and coca leaves</li>
+		</ol>
+	<!-- css list ends -->
+
+	<!-- css table -->
+		<style>
+			table {
+			  border-collapse: collapse;
+			  width: 100%;
+			}
+
+			table, td, th {
+			  border: 1px solid black;
+			  height: 50px;
+  			  vertical-align: middle;
+			}
+
+			tr:nth-child(even) {
+				background-color: darkgray;
+			}
+			/*tr:nth-child(1) {
+				background-color: red;
+			}*/
+			/*tr:first-child {
+				background-color: green;
+			}
+			tr:last-child {
+				background-color: green;
+			}*/
+		</style>
+		
+		<table>
+		  <tr>
+		    <th>Firstname</th>
+		    <th>Lastname</th>
+		  </tr>
+		  <tr>
+		    <td>Peter</td>
+		    <td>Griffin</td>
+		  </tr>
+		  <tr>
+		    <td>Lois</td>
+		    <td>Griffin</td>
+		  </tr>
+		</table>
+	<!-- css table ends-->
+
+</body>
+
+</html>
+
